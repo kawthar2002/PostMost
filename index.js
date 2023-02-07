@@ -4,15 +4,15 @@ const passwordInput = document.querySelector('.password-input');
 console.log(passwordInput);
 hide.addEventListener('click', (event) => {
   event.preventDefault();
-  if (passwordInput.getAttribute('type') == 'password') {
-    show.classList.add('displayed');
-    hide.classList.add('hidden')
-    passwordInput.setAttribute('type', 'text');
-} else {
-    hide.classList.remove('hidde');
-    show.classList.remove('displayed');
-    passwordInput.setAttribute('type', 'password');
-}
+  show.classList.add('displayed');
+  hide.classList.add('hidden');
+  passwordInput.setAttribute('type', 'text');
+});
+show.addEventListener('click', (event) => {
+  event.preventDefault();
+  hide.classList.remove('hidden');
+  show.classList.remove('displayed');
+  passwordInput.setAttribute('type', 'password');
 });
 
 const inputs = document.querySelectorAll('.modal-from__input');
