@@ -27,6 +27,12 @@ body {
   flex-direction: column;
   text-align: center;
 }
+.hidden {
+  display: none;
+}
+.displayed {
+  display: block;
+}
 .modal__heading {
   font-family: 'Manrope', sans-serif;
   font-weight: 600;
@@ -50,10 +56,6 @@ label {
   padding: 10px;
   border-bottom: 1px solid #2b689b;
 }
-label svg {
-  position: absolute;
-  right: 0;
-}
 input {
   position: relative;
   z-index: 1;
@@ -65,7 +67,7 @@ input {
   font-size: 18px;
   line-height: 140%;
   background: transparent;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 input:focus ~ label span {
   display: none;
@@ -98,6 +100,16 @@ span {
   margin: 0 auto;
   transition: all 0.3s;
   cursor: pointer;
+}
+.hide,
+.show {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  z-index: 2;
+  padding: 10px;
 }
 .modal-form__button:hover {
   background-color: #ffe292;
