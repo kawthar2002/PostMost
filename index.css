@@ -69,9 +69,6 @@ input {
   background: transparent;
   margin-left: 30px;
 }
-input:focus ~ label span {
-  display: none;
-}
 p,
 label {
   color: #ffb6c1;
@@ -80,9 +77,8 @@ p {
   margin: 30px 0 30px 10px;
   text-align: left;
 }
-span {
+.modal-form__label {
   color: #2b689b;
-  margin-left: 10px;
 }
 .modal-form__button {
   background: #ffd970;
@@ -129,6 +125,15 @@ span {
 .modal-form__link:hover {
   color: #3d7fb7;
 }
+span {
+  font-size: 15px;
+  line-height: 140%;
+  color: #f13f58;
+  text-align: left;
+  padding: 5px 0 0 10px;
+  display: block;
+}
+
 @media (max-width: 350px) {
   .modal {
     padding: 30px 20px;
@@ -155,5 +160,9 @@ span {
   .modal-form__link {
     font-size: 15px;
     margin-right: 20px;
+  }
+  .error {
+    font-size: 13px;
+    padding-top: 3px;
   }
 }

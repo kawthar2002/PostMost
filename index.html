@@ -13,7 +13,7 @@
         <div class="modal__logo">
           <img src="./img/logo.svg" alt="PostMost" class="log" />
         </div>
-        <form>
+        <form id="password_recovery_form">
           <h1 class="modal__heading">Изменение пароля</h1>
           <div class="modal-from__input">
             <input type="email" autocomplete="email" />
@@ -22,7 +22,7 @@
             >
           </div>
           <div class="modal-from__input">
-            <input type="text" />
+            <input type="text" class="control-string" />
             <label
               >*<span class="modal-form__label">Контрольная строка</span></label
             >
@@ -30,7 +30,7 @@
           <div class="modal-from__input">
             <input
               type="password"
-              class="password-input"
+              class="password-input password-field"
               autocomplete="new-password"
             />
             <label
@@ -93,12 +93,12 @@
             </label>
           </div>
           <div class="modal-from__input">
-            <input type="password" autocomplete="new-password" />
+            <input type="password" class="password-field password-confirmation" autocomplete="new-password"/>
             <label
               >*<span class="modal-form__label">Подтверждение пароля</span>
             </label>
           </div>
-          <p>*<span>Обязательные поля</span></p>
+          <p>*<span class="modal-form__label">Обязательные поля</span></p>
           <button class="modal-form__button">
             Изменить пароль
             <svg
